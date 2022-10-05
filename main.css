@@ -15,7 +15,7 @@ body {
 /* Styles */
 
 header {
-	background-color: #011946;
+	background-color: #FF98A8;
 	padding: 10px 20px;
 }
 
@@ -23,8 +23,12 @@ footer, main, nav {
 	padding: 20px;
 }
 
+main.a {
+	color: #FF98A8
+}
+
 nav, footer {
-	background-color: #c2d5db;
+	background-color: #FFB4C9;
 }
 
 #pageHeader {
@@ -49,7 +53,7 @@ nav, footer {
 
 #mainNav {
 	grid-area: nav;
-	border-bottom: 2px solid #011946;
+	border-bottom: 2px solid #ED5D8F;
 }
 
 #mainNav ul {
@@ -66,7 +70,7 @@ nav, footer {
 #mainNav ul li a {
 	padding: 20px 10px;
 	text-decoration: none;
-	color: #011946;
+	color: #fd7c2c;
 }
 
 #mainNav ul li a:hover {
@@ -76,9 +80,9 @@ nav, footer {
 #mainNav .current a {
 	background-color: #d4ebf2;
 	padding: 14px 10px;
-	color: #011946;
+	color: #fd7c2c;
 	border: 6px solid transparent;
-	border-bottom-color: #011946;
+	border-bottom-color: #fd7c2c;
 }
 
 h1 {
@@ -87,11 +91,11 @@ h1 {
 }
 
 h2 {
-	color: #011946;
+	color: #fd7c2c;
 }
 
 footer {
-	border-top: 2px solid #011946;
+	border-top: 2px solid #fd7c2c;
 	text-align: left;
 }
 
@@ -109,12 +113,12 @@ footer li {
 
 footer li a {
 	text-decoration: none;
-	color: #011946;
+	color: #fd7c2c;
 }
 
-footer li a:visited {
+/* footer li a:visited {
 	color: #551A8B;
-}
+} */
 
 p {
 	padding-bottom: 10px;
