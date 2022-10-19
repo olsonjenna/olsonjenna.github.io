@@ -1,0 +1,166 @@
+body {
+    background-color: #EFF1E3;
+    color: #5B6970;
+    font-family: ivymode, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {color: #5B6970;
+    text-align: center;
+    font-family: ivymode, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+h3 {
+    color: #5B6970;
+}
+
+dd {
+    font-style: italic;
+    font-size: .90em;
+    line-height: 200%;
+}
+
+header {
+    width: 100%;
+    color: #5B6970;
+    padding-left: 1%;
+    padding-top: 1%;
+    background-color: #B6BCA3;
+    display: inline-block;
+}
+
+/* navigation buttons */
+
+nav{
+    display: inline-block;
+    color: #5B6970;
+}
+
+nav a {
+    color: #5B6970;
+    font-size: 1.2em;
+    font-family: ivymode, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 1%;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #515f30;
+    border-bottom: 2px solid #515f30;
+    display: inline-block;
+}
+
+nav a.active {
+    color: #515f30;
+    border-bottom: 2px solid #515f30;
+    display: inline-block;
+}
+
+#navigation {
+
+    text-align: center;
+    background-color: #B6BCA3;
+
+}
+
+#navigation ul li{
+    display: inline;
+    padding: 1%;
+}
+
+small {
+    text-align: center;
+    display: inline-block;
+    padding: 0.5%;
+    margin: 0.5s%;
+}
+
+/* removes bullet points in footer */
+ul {
+    list-style-type: none;
+}
+
+/* footer links */
+#copy {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #B6BCA3;
+    color: #5B6970;
+    text-align: center;
+    font-family: ivymode, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#footerlinks a:hover {
+    color: #515f30;
+}
+
+#footerlinks a {
+    color: #EFF1E3;
+    text-decoration: none;
+}
+
+#footerlinks {
+    padding-left: 3%;
+    text-decoration: none;
+    font-size: 90%;
+    text-align: left;
+}
+
+
+
+/* footer social media icons */
+#socials a:hover {
+    color: #515f30;
+}
+
+#socials a {
+    color: #EFF1E3;
+}
+
+#socials {
+    padding-top: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    font-size: 150%;
+    text-align: right;
+}
+
+
+/* cart icon in head*/
+#cart a:hover {
+    color: #515f30;
+}
+
+#cart a {
+    color: #EFF1E3;
+}
+
+#cart {
+    padding-top: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    font-size: 150%;
+    float: right;
+    display: inline-block;
+    background-color: #B6BCA3;
+}
