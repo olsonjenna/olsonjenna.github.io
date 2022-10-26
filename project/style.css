@@ -1,3 +1,17 @@
+/* universal making links easier to click */
+*{box-sizing: border-box;}
+
+/* fix header to top of page, text color slate, background color light sage, gives padding all around*/
+header {
+    top: 0;
+    right: 0;
+    width: 100%;
+    color: #5B6970;
+    padding: 1%;
+    background-color: #B6BCA3;
+}
+
+/* defines body background color, text color, and font characteristics*/
 body {
     background-color: #EFF1E3;
     color: #5B6970;
@@ -6,17 +20,107 @@ body {
     font-weight: 300;
 }
 
-#wrapper {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+
+
+
+
+/* gives padding around logo */
+.logo{
+    padding-left: 1.5%;
+    padding-top: 1%;
 }
+
+main{
+    padding-top: 5%
+}
+
+
+
+/* navigation buttons */
+
+nav{
+    color: #5B6970;
+    text-align: center;
+    background-color: #B6BCA3;
+}
+
+nav a {
+    color: #EFF1E3;
+    font-size: 1.2em;
+    font-family: ivymode, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 10%;
+}
+
+nav a:hover {
+    color: #515f30;
+    border-bottom: 2px solid #515f30;
+}
+
+nav a:active {
+    color: #515f30;
+    border-bottom: 2px solid #515f30;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+
+
+
+
+/* removes bullet points in footer & header */
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+/* cart icon in head*/
+#cart a:hover {
+    color: #515f30;
+}
+
+#cart a {
+    color: #EFF1E3;
+}
+
+#cart {
+    padding-top: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    font-size: 150%;
+    float: right;
+    background-color: #B6BCA3;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 h2 {color: #5B6970;
     text-align: center;
     font-family: ivymode, sans-serif;
     font-style: normal;
     font-weight: 300;
+    clear:both
 }
 
 h3 {
@@ -29,68 +133,16 @@ dd {
     line-height: 200%;
 }
 
-header {
-    width: 100%;
-    color: #5B6970;
-    padding-left: 1%;
-    padding-top: 1%;
-    background-color: #B6BCA3;
-    display: inline-block;
-}
 
-/* navigation buttons */
-
-nav{
-    display: inline-block;
-    color: #5B6970;
-}
-
-nav a {
-    color: #5B6970;
-    font-size: 1.2em;
-    font-family: ivymode, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: none;
-    padding-bottom: 1%;
-    display: inline-block;
-}
-
-nav a:hover {
-    color: #515f30;
-    border-bottom: 2px solid #515f30;
-    display: inline-block;
-}
-
-nav a.active {
-    color: #515f30;
-    border-bottom: 2px solid #515f30;
-    display: inline-block;
-}
-
-#navigation {
-
-    text-align: center;
-    background-color: #B6BCA3;
-
-}
-
-#navigation ul li{
-    display: inline;
-    padding: 1%;
-}
 
 small {
     text-align: center;
     display: inline-block;
     padding: 0.5%;
-    margin: 0.5s%;
+    margin: 0.5%;
 }
 
-/* removes bullet points in footer */
-ul {
-    list-style-type: none;
-}
+
 
 /* footer links */
 #copy {
@@ -98,7 +150,7 @@ ul {
 }
 
 footer {
-    position: fixed;
+    margin-top: 100%;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -143,24 +195,4 @@ footer {
     text-decoration: none;
     font-size: 150%;
     text-align: right;
-}
-
-
-/* cart icon in head*/
-#cart a:hover {
-    color: #515f30;
-}
-
-#cart a {
-    color: #EFF1E3;
-}
-
-#cart {
-    padding-top: 2%;
-    padding-right: 2%;
-    text-decoration: none;
-    font-size: 150%;
-    float: right;
-    display: inline-block;
-    background-color: #B6BCA3;
 }
