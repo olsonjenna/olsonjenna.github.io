@@ -15,9 +15,6 @@ header {
 body {
     background-color: #EFF1E3;
     color: #5B6970;
-    font-family: ivymode, sans-serif;
-    font-style: normal;
-    font-weight: 300;
 }
 
 
@@ -47,9 +44,16 @@ nav{
 nav a {
     color: #EFF1E3;
     font-size: 1.2em;
-    font-family: ivymode, sans-serif;
+   /*font-family: ivymode, sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 600;*/
+    font-family: greycliff-cf, sans-serif;
+
+    font-weight: 500;
+    
+    font-style: normal;
+    
+    
     text-decoration: none;
     padding-bottom: 10%;
 }
