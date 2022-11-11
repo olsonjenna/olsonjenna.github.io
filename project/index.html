@@ -1,85 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>JO</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JO</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://use.typekit.net/dpe4gwi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lnf0lxn.css">
     <script src="https://kit.fontawesome.com/b3517b743b.js" crossorigin="anonymous"></script>
+    <!-- jQuery 1.8 or later, 33 KB -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Fotorama from CDNJS, 19 KB -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
-
-<div id="wrapper">
-
 <body>
-    <div class="container">
-    <header>
-        <a class="logo" href="index.html"><img id="mainLogo" src="images/logo.png" alt="Logo" width=10% /></a>
-        <a id ="cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <header id="logogrid">
+        <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo"/></a>
+    </header>
 
-
-    <nav>
+    <nav id="navbargrid">
         <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="shop.html">SHOP</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="inquire.html">INQUIRE</a></li>
-    </ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="inquire.html">INQUIRE</a></li>
+        </ul>
     </nav>
-</header>
+
+    <div id="checkoutgrid">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
 
-    <main>
-        <h2>elevating life's most important moments</h2>
-        <img id="boquet" src="images/img3.jpg" alt="boquet"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <main id="maingrid">
+        elevating life's most important moments
+        <!-- Add images to <div class="fotorama"></div> -->
+<div class="fotorama">
+    <img src="images/jolabel.png">
+    <img src="images/envelope.png">
+    <img src="images/greenribbon.png">
+  </div>
     </main>
 
-    <footer>
-        
-        <div id="socials">
-            <a href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok" target="_blank"></i></i></a>
-        </div>
-        <!--end socials div-->
 
-        <ul id="footerlinks">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="about.html">CONTACT</a></li>
-            <li><a href="about.html">FAQ</a></li>
-        </ul>
 
-        <small id="copyright"><i>&copy; JO 2022</i>  </small>
+    <footer id="footlinksgrid">
+    <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+</footer>
+    
 
-    </footer>
-</div>
+    <div id="copyrightgrid">
+        &copy; JO 2022
+    </div>
+
+    <div id="socialsgrid">
+        <a href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok" ></i></i></a>
+    </div>
+
+
 </body>
 
 </html>

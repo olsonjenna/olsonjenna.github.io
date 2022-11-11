@@ -1,76 +1,60 @@
-/* universal making links easier to click */
-*{box-sizing: border-box;}
-
-/* fix header to top of page, text color slate, background color light sage, gives padding all around*/
-header {
-    top: 0;
-    right: 0;
-    width: 100%;
-    color: #5B6970;
-    padding: 1%;
-    background-color: #B6BCA3;
-}
-
-/* defines body background color, text color, and font characteristics*/
 body {
-    background-color: #EFF1E3;
-    color: #5B6970;
+    display: grid;
+    grid-template-areas:
+        "header nav cart"
+        "main main main"
+        "footer copyright socialmedia";
+    grid-template-rows: 20% 68% 12%;
+    grid-template-columns: 20% 60% 20%;
+    gap: 0%;
+    height: 100vh;
+    margin: 0;
+    font-size: 30px;
 }
 
 
 
 
 
-/* gives padding around logo */
-.logo{
-    padding-left: 1.5%;
-    padding-top: 1%;
-}
-
-main{
-    padding-top: 5%
-}
 
 
-
-/* navigation buttons */
-
-nav{
-    color: #5B6970;
+#logogrid {
+    grid-area: header;
     text-align: center;
     background-color: #B6BCA3;
+    padding-top: 4%;
+    padding-bottom: 2%;
 }
 
-nav a {
-    color: #EFF1E3;
-    font-size: 1.2em;
-   /*font-family: ivymode, sans-serif;
-    font-style: normal;
-    font-weight: 600;*/
-    font-family: greycliff-cf, sans-serif;
+#mainLogo{
+    width: 50%;
+}
 
-    font-weight: 500;
-    
+#navbargrid{
+    grid-area: nav;
+    text-align: center;
+    font-family: fira-sans, sans-serif;
+    font-weight: 400;
     font-style: normal;
-    
-    
+    color: #5B6970;
+    background-color: #B6BCA3;
+}
+
+#navbargrid a{
     text-decoration: none;
-    padding-bottom: 10%;
+    color: #EFF1E3;
+    padding-bottom: 10%
 }
 
-nav a:hover {
+
+#navbargrid a:hover {
     color: #515f30;
     border-bottom: 2px solid #515f30;
 }
 
-nav a:active {
-    color: #515f30;
-    border-bottom: 2px solid #515f30;
-}
-
-nav ul li{
+nav ul li {
     display: inline-block;
-    list-style-type: none;
+    padding-top: 4%;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -80,123 +64,152 @@ nav ul li{
 
 
 
-/* removes bullet points in footer & header */
-ul {
-    list-style-type: none;
-}
 
 
-
-
-
-
-/* cart icon in head*/
-#cart a:hover {
-    color: #515f30;
-}
-
-#cart a {
-    color: #EFF1E3;
-}
-
-#cart {
-    padding-top: 2%;
-    padding-right: 2%;
-    text-decoration: none;
-    font-size: 150%;
-    float: right;
-    background-color: #B6BCA3;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-h2 {color: #5B6970;
-    text-align: center;
-    font-family: ivymode, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    clear:both
-}
-
-h3 {
-    color: #5B6970;
-}
-
-dd {
-    font-style: italic;
-    font-size: .90em;
-    line-height: 200%;
-}
-
-
-
-small {
-    text-align: center;
-    display: inline-block;
-    padding: 0.5%;
-    margin: 0.5%;
-}
-
-
-
-/* footer links */
-#copy {
-    text-align: center;
-}
-
-footer {
-    margin-top: 100%;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #B6BCA3;
-    color: #5B6970;
-    text-align: center;
-    font-family: ivymode, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-}
-
-#footerlinks a:hover {
-    color: #515f30;
-}
-
-#footerlinks a {
-    color: #EFF1E3;
-    text-decoration: none;
-}
-
-#footerlinks {
-    padding-left: 3%;
-    text-decoration: none;
-    font-size: 90%;
-    text-align: left;
-}
-
-
-
-/* footer social media icons */
-#socials a:hover {
-    color: #515f30;
-}
-
-#socials a {
-    color: #EFF1E3;
-}
-
-#socials {
-    padding-top: 2%;
-    padding-right: 2%;
-    text-decoration: none;
-    font-size: 150%;
+#checkoutgrid {
+    grid-area: cart;
     text-align: right;
+    color: #5B6970;
+    background-color: #B6BCA3;
+    padding-top: 20%;
+    padding-right: 25%;
+}
+
+
+#checkoutgrid a:hover {
+    color: #515f30;
+    text-decoration: none;
+}
+
+#checkoutgrid a {
+    color: #EFF1E3;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#maingrid {
+    grid-area: main;
+    background-color: #EFF1E3;
+    color: #5B6970;
+    text-align: center;
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+
+
+
+
+
+
+#footlinksgrid {
+    grid-area: footer;
+    text-align: left;
+    font-size: 60%;
+    font-family: fira-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EFF1E3;
+    background-color: #B6BCA3;
+    padding-top: 0.3%;
+}
+
+#footlinksgrid a:hover {
+    color: #515f30;
+}
+
+#footlinksgrid a{
+    text-decoration: none;
+    color: #EFF1E3;
+}
+
+ul li{
+    padding-top: 2.5%;
+}
+
+
+#copyrightgrid {
+    grid-area: copyright;
+    text-align: center;
+    font-size: 55%;
+    font-family: fira-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #5B6970;
+    background-color: #B6BCA3;
+    padding-top: 9%;
+}
+
+#socialsgrid {
+    grid-area: socialmedia;
+    text-align: right;
+    background-color: #B6BCA3;
+    padding-top: 12%;
+    padding-right: 15%;
+}
+
+#socialsgrid a:hover {
+    color: #515f30;
+    text-decoration: none;
+}
+
+#socialsgrid a {
+    color: #EFF1E3;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+ul li{
+    list-style-type: none;
+    padding-top: 1.5%;
+}
+
+
+.inprogress {
+    font-size: 125%;
+    padding-top: 10%;
+}
+
+
+h1{
+    font-family: fira-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120%;
+}
+
+.hellojo{
+    font-family: fira-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 75%;
+    padding-top: 7%;
+}
+
+.contactemail{
+    font-family: fira-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 75%;
+}
+.fotorama{
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
