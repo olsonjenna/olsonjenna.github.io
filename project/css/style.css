@@ -15,9 +15,6 @@ body {
 
 
 
-
-
-
 #logogrid {
     grid-area: header;
     text-align: center;
@@ -105,8 +102,8 @@ nav ul li {
     font-family: fira-sans, sans-serif;
     font-weight: 200;
     font-style: normal;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 
@@ -180,8 +177,8 @@ ul li{
 
 
 .inprogress {
-    font-size: 125%;
     padding-top: 5%;
+    font-size: 100%;
 }
 
 
@@ -197,7 +194,7 @@ h1{
     font-weight: 300;
     font-style: normal;
     font-size: 75%;
-    padding-top: 7%;
+    padding-top: 1%;
 }
 
 .contactemail{
@@ -207,7 +204,7 @@ h1{
     font-size: 75%;
 }
 .fotorama{
-    width: 40%;
+    width: 75%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -222,7 +219,7 @@ h1{
     font-style: normal;
     font-size: 150%;
     text-align: left;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 h2{
@@ -258,3 +255,145 @@ h2{
     padding-bottom: 0%;
     padding-top: 0%;
 }
+
+.answers{
+    text-transform: lowercase;
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 70%;
+    text-align: left;
+    padding-left: 5%; 
+    padding-right: 5%; 
+    padding-bottom: 3%;
+    padding-top: 0%;
+}
+
+.questions{
+    font-family: fira-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80%;
+    text-align: left;
+    padding-left: 5%; 
+    padding-bottom: 0%;
+}
+
+
+
+
+#inquireform{
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 7%; 
+    padding-right: 5%; 
+
+}
+
+.column{    
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 70%;
+    text-align: left;
+    padding-left: 5%; 
+    padding-right: 7%; }
+    
+    #yourmessage{
+        height: 15em;
+        text-align: left;
+    }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 75%;
+  }
+
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 80%;
+  }
+
+  input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 80%;
+  }
+  
+  input[type=submit] {
+    background-color: #515f30;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: fira-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 100%;
+    text-transform: uppercase;
+    float:right;
+  }
+
+
+
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
