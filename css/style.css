@@ -18,16 +18,17 @@ body {
 #logogrid {
     grid-area: header;
     background-color: #B6BCA3;
+    padding-left: 20%;
     padding-top: 4%;
     padding-bottom: 2%;
 }
 
-#mainLogo{
-    width: 50%;
+#mainLogo {
+    width: 65%;
     text-align: left;
 }
 
-#navbargrid{
+#navbargrid {
     grid-area: nav;
     font-family: fira-sans, sans-serif;
     font-weight: 400;
@@ -36,18 +37,19 @@ body {
     background-color: #B6BCA3;
 }
 
-#navbargrid a{
+#navbargrid a {
     text-decoration: none;
     color: #EFF1E3;
     padding-bottom: 10%
 }
 
-#navbargrid a:hover, #navbargrid a.active {
+#navbargrid a:hover,
+#navbargrid a.active {
     color: #515f30;
     border-bottom: 2px solid #515f30;
 }
 
-.navbar{
+.navbar {
     text-align: center;
 }
 
@@ -133,12 +135,12 @@ nav ul li {
     color: #515f30;
 }
 
-#footlinksgrid a{
+#footlinksgrid a {
     text-decoration: none;
     color: #EFF1E3;
 }
 
-ul li{
+ul li {
     padding-top: 2.5%;
 }
 
@@ -181,33 +183,36 @@ ul li {
 
 
 .inprogress {
-    padding-top: 5%;
+    padding-top: 11%;
+    padding-bottom: 11%;
     font-size: 100%;
 }
 
 
-h1{
+h1 {
     font-family: fira-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 120%;
 }
 
-.hellojo{
+.hellojo {
     font-family: fira-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 75%;
-    padding-top: 1%;
+    font-size: 85%;
+    padding-top: 10%;
 }
 
-.contactemail{
+.contactemail {
     font-family: fira-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 75%;
+    font-size: 85%;
+    padding-bottom: 10%;
 }
-.fotorama{
+
+.fotorama {
     width: 45%;
     height: auto;
     margin-left: auto;
@@ -217,7 +222,7 @@ h1{
 
 
 
-h1{
+h1 {
     font-family: fira-sans, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -226,49 +231,51 @@ h1{
     padding-left: 3%;
 }
 
-h2{
+h2 {
     font-family: fira-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 100%;
     text-align: left;
-    padding-left: 5%; 
+    padding-left: 5%;
     padding-bottom: 0%;
 }
-.aboutwords{
+
+.aboutwords {
     text-transform: lowercase;
     font-family: fira-sans, sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 80%;
     text-align: left;
-    padding-left: 5%; 
-    padding-right: 5%; 
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 3%;
     padding-top: 0%;
 }
-.aboutwords2{
+
+.aboutwords2 {
     text-transform: lowercase;
     font-family: fira-sans, sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 80%;
     text-align: left;
-    padding-left: 5%; 
-    padding-right: 5%; 
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 0%;
     padding-top: 0%;
 }
 
-.answers{
+.answers {
     text-transform: lowercase;
     font-family: fira-sans, sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 70%;
     text-align: left;
-    padding-left: 5%; 
-    padding-right: 5%; 
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 3%;
     padding-top: 0%;
 }
@@ -282,50 +289,53 @@ h2{
 
 }
 
-.questions{
+.questions {
     font-family: fira-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 80%;
     text-align: left;
-    padding-left: 5%; 
+    padding-left: 5%;
     padding-bottom: 0%;
 }
 
 
 
 
-#inquireform{
+#inquireform {
     font-family: fira-sans, sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 1em;
     text-align: left;
-    padding-left: 7%; 
-    padding-right: 5%; 
+    padding-left: 7%;
+    padding-right: 5%;
 
 }
 
-.column{    
+.column {
     font-family: fira-sans, sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 70%;
     text-align: left;
-    padding-left: 5%; 
-    padding-right: 7%; }
-    
-    #yourmessage{
-        height: 15em;
-        text-align: left;
-    }
+    padding-left: 5%;
+    padding-right: 7%;
+}
+
+#yourmessage {
+    height: 15em;
+    text-align: left;
+}
 
 * {
     box-sizing: border-box;
-  }
-  
-  /* Style inputs */
-  input[type=text], select, textarea {
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -336,9 +346,11 @@ h2{
     font-weight: 200;
     font-style: normal;
     font-size: 75%;
-  }
+}
 
-  input[type=email], select, textarea {
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -349,9 +361,11 @@ h2{
     font-weight: 200;
     font-style: normal;
     font-size: 80%;
-  }
+}
 
-  input[type=date], select, textarea {
+input[type=date],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -362,9 +376,9 @@ h2{
     font-weight: 200;
     font-style: normal;
     font-size: 80%;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #515f30;
     color: white;
     padding: 12px 20px;
@@ -375,34 +389,34 @@ h2{
     font-style: normal;
     font-size: 100%;
     text-transform: uppercase;
-    float:right;
-  }
+    float: right;
+}
 
-  /* Style the container/contact section */
-  .container {
+/* Style the container/contact section */
+.container {
     border-radius: 5px;
     background-color: #EFF1E3;
     padding: 10px;
-  }
-  
-  /* Create two columns that float next to eachother */
-  .column {
+}
+
+/* Create two columns that float next to eachother */
+.column {
     float: left;
     width: 50%;
     margin-top: 6px;
     padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 
-  .hamburger {
-	display: none;
+.hamburger {
+    display: none;
 }
 
 #myNav {
@@ -410,86 +424,193 @@ h2{
 }
 
 
+
+
+#maingallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row wrap;
+
+}
+
+.card {
+    position: relative;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Make the image responsive */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.card .gallerybutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #EFF1E3;
+    color: #5B6970;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-family: fira-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+}
+
+.card .gallerybutton:hover {
+    color: #EFF1E3;
+    background-color: #B6BCA3;
+}
+
+
+
+
+
+
+
+
+
+
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.image-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+image-grid-col-1 {
+    grid-column: span 1;
+
+}
+
+image-grid-row-1 {
+    grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+
+
 @media (max-width: 600px) {
     #mainLogo {
         text-align: center;
     }
 
-	.hamburger {
-		display: inline;
-		font-size: 100%; 
-		vertical-align: top;
+    .hamburger {
+        display: inline;
+        font-size: 100%;
+        vertical-align: top;
         text-align: left;
         color: #EFF1E3;
-	}
+    }
 
-	nav ul li {
-		display: none;
-	}
+    nav ul li {
+        display: none;
+    }
 
-	/* The Overlay (background) */
-	.overlay {
-		/* Height & width depends on how you want to reveal the overlay (see JS below) */
-		height: 100%;
-		width: 0;
-		position: fixed;
-		/* Stay in place */
-		z-index: 1;
-		/* Sit on top */
-		left: 0;
-		top: 0;
-		background-color: #EFF1E3;
-		/* Black fallback color */
-		background-color: #EFF1E3;
-		/* Black w/opacity */
-		overflow-x: hidden;
-		/* Disable horizontal scroll */
-		transition: 0.5s;
-		/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-	}
+    /* The Overlay (background) */
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: #EFF1E3;
+        /* Black fallback color */
+        background-color: #EFF1E3;
+        /* Black w/opacity */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
 
-	/* Position the content inside the overlay */
-	.overlay-content {
+    /* Position the content inside the overlay */
+    .overlay-content {
         font-family: fira-sans, sans-serif;
         font-weight: 400;
         font-style: normal;
         padding-left: 2%;
-		position: relative;
-		top: 25%;
-		/* 25% from the top */
-		width: 75%;
-		/* 75% width */
-		text-align: Left;
-		/* Left Align text/links */
-		margin-top: 30px;
-		/* 30px top margin to avoid conflict with the close button on smaller screens */
-	}
+        position: relative;
+        top: 25%;
+        /* 25% from the top */
+        width: 75%;
+        /* 75% width */
+        text-align: Left;
+        /* Left Align text/links */
+        margin-top: 30px;
+        /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
 
-	/* The navigation links inside the overlay */
-	.overlay a {
-		padding: 8px;
-		text-decoration: none;
-		font-size: 100%;
-		color: #515f30;
-		display: block;
-		/* Display block instead of inline */
-		transition: 0.3s;
-		/* Transition effects on hover (color) */
-	}
+    /* The navigation links inside the overlay */
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 100%;
+        color: #515f30;
+        display: block;
+        /* Display block instead of inline */
+        transition: 0.3s;
+        /* Transition effects on hover (color) */
+    }
 
-	/* When you mouse over the navigation links, change their color */
-	.overlay a:hover,
-	.overlay a:focus {
-		color: #B6BCA3;
-	}
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #B6BCA3;
+    }
 
-	/* Position the close button (top right corner) */
-	.overlay .closebtn {
-		position: absolute;
-		top: 20px;
-		right: 45px;
-		font-size: 60px;
-	}
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
 }
 
 /* end */
@@ -498,11 +619,13 @@ h2{
 
 
 
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
-  }
+}

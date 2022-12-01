@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>JO | contact</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Jenna Olson">
-        <meta name="description" content="get in contact with JO!">
-        <meta name="keywords" content="email, contact, keep in touch, inquire, ask, JO questions, JO contact form">
-        <meta name="robots" content="index, follow">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-        <link rel="stylesheet" href="https://use.typekit.net/lnf0lxn.css">
-        <script src="https://kit.fontawesome.com/b3517b743b.js" crossorigin="anonymous"></script>
-            <!-- Google tag (gtag.js) -->
+<head>
+    <title>JO | contact</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jenna Olson">
+    <meta name="description" content="get in contact with JO!">
+    <meta name="keywords" content="email, contact, keep in touch, inquire, ask, JO questions, JO contact form">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://use.typekit.net/lnf0lxn.css">
+    <script src="https://kit.fontawesome.com/b3517b743b.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WJ8Y96LEN"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4WJ8Y96LEN');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-4WJ8Y96LEN');
     </script>
-    </head>
-    
+</head>
+
 <body>
-    <header id="logogrid">
-        <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo"/></a>
-    </header>
-
-    <nav id="navbargrid">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="shop.html">SHOP</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="inquire.html">INQUIRE</a></li>
-        </ul>
-    </nav>
-
-    <div id="checkoutgrid">
-        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-    </div>
+    <body>
+        <header id="logogrid">
+            <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo" /></a>
+        </header>
+    
+        <nav id="navbargrid" class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="inquire.html">INQUIRE</a></li>
+            </ul>
+            <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
+        </nav>
+    
+        <!-- Full Screen Overlay Navigation for Small Screens -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="inquire.html">INQUIRE</a>
+            </div>
+        </div>
+    
+        <script src="js/overlaynavigation.js"></script>
+    
+        <div id="checkoutgrid">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    
 
     <main id="maingrid">
         <h1>CONTACT</h1>
-        <p class="hellojo">jo is a team of one so getting in touch is easy! 
+        <p class="hellojo">jo is a team of one so getting in touch is easy!
         </p>
         <p class="contactemail">hello.jodesigns@gmail.com
         </p>
@@ -56,13 +77,13 @@
 
 
     <footer id="footlinksgrid">
-    <ul>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a class="active" href="contact.html">CONTACT</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-    </ul>
-</footer>
-    
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+
 
     <div id="copyrightgrid">
         &copy; JO 2022
@@ -71,7 +92,7 @@
     <div id="socialsgrid">
         <a href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok" ></i></a>
+        <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
     </div>
 
 </body>

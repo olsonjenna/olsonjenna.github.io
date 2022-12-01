@@ -8,57 +8,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jenna Olson">
     <meta name="description" content="shop JO thank-you notes, photo cards, & more.">
-    <meta name="keywords" content="new collections, thank you notes, thank-you cards, photo cards, cards with photography, modern cards, notes">
+    <meta name="keywords"
+        content="new collections, thank you notes, thank-you cards, photo cards, cards with photography, modern cards, notes">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="https://use.typekit.net/lnf0lxn.css">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WJ8Y96LEN"></script>
-        <script>
+    <script src="https://kit.fontawesome.com/b3517b743b.js" crossorigin="anonymous"></script>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WJ8Y96LEN"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'G-4WJ8Y96LEN');
-        </script>
+    </script>
 </head>
 
 <body>
     <header id="logogrid">
-        <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo"/></a>
+        <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo" /></a>
     </header>
 
-    <nav id="navbargrid">
+    <nav id="navbargrid" class="navbar">
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a class="active" href="shop.html">SHOP</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="inquire.html">INQUIRE</a></li>
         </ul>
+        <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </nav>
+
+    <!-- Full Screen Overlay Navigation for Small Screens -->
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="inquire.html">INQUIRE</a>
+        </div>
+    </div>
+
+    <script src="js/overlaynavigation.js"></script>
 
     <div id="checkoutgrid">
         <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
-
     <main id="maingrid">
-
-        <h1>SHOP</h1>
-        <p class="inprogress">creativity flowing...   check back soon!
-        </p>
-    </main>
-
+    <h1>SHOP</h1>
+    <p class="inprogress">creativity flowing... check back soon!
+    </p>
+</main>
 
 
     <footer id="footlinksgrid">
-    <ul>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-    </ul>
-</footer>
-    
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+
 
     <div id="copyrightgrid">
         &copy; JO 2022
@@ -67,7 +87,7 @@
     <div id="socialsgrid">
         <a href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok" ></i></a>
+        <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
     </div>
 
 

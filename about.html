@@ -7,77 +7,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jenna Olson">
-    <meta name="description" content="learn about JO & its mission: elevating life’s most important moments through intentional communication.">
-    <meta name="keywords" content="values, story, Jenna Olson, designer, environmentally friendly, print, elegance, golden coast, mission, bio">
+    <meta name="description"
+        content="learn about JO & its mission: elevating life’s most important moments through intentional communication.">
+    <meta name="keywords"
+        content="values, story, Jenna Olson, designer, environmentally friendly, print, elegance, golden coast, mission, bio">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="https://use.typekit.net/lnf0lxn.css">
     <script src="https://kit.fontawesome.com/b3517b743b.js" crossorigin="anonymous"></script>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WJ8Y96LEN"></script>
-        <script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WJ8Y96LEN"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'G-4WJ8Y96LEN');
-        </script>
+    </script>
 </head>
 
 <body>
     <header id="logogrid">
-        <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo"/></a>
+        <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo" /></a>
     </header>
 
-    <nav id="navbargrid">
+    <nav id="navbargrid" class="navbar">
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="shop.html">SHOP</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="inquire.html">INQUIRE</a></li>
         </ul>
+        <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </nav>
+
+    <!-- Full Screen Overlay Navigation for Small Screens -->
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="inquire.html">INQUIRE</a>
+        </div>
+    </div>
+
+    <script src="js/overlaynavigation.js"></script>
 
     <div id="checkoutgrid">
         <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
 
+
     <main id="maingrid">
 
-    <h1>ABOUT</h1>
- 
-<h2>MEET JO</h2>
-<p class="aboutwords">I’m Jenna & I am so glad you are here!  Being from the golden coast, I am a lover of all things beautiful & bright.  I am a lover of life and believe it deserves to be celebrated.  I am crazy about amazing fonts, gorgeous paper & meaningful wording.  I cannot wait to work with you & design the invitation of your dreams!</p>
- 
-<h2>OUR STORY</h2>
-<p class="aboutwords">The idea for JO was born in the summer of 2021 when I decided to marry the love of my life!  After scouring the internet, discovering the vast industry of online invitation boutiques, & failing to find the wedding invitation of my dreams, I designed & printed my perfect wedding suite.  I started JO because everyone deserves a gorgeous invitation that matches their style & needs.  The rest is history!</p>
- 
-<h2>OUR MISSION</h2>
-<p class="aboutwords">JO’s mission is to elevate life’s most important moments through intentional communication.</p>
- 
-<h2>OUR VALUES</h2>
-    <p class="aboutwords2">
-    We value print. (PRINT IS NOT DEAD!)
-    We value intentional design & gracious language.
-    We value the expansion of an individual’s core relationships.
-    We value refinement, class, politeness, love, & kindness.
-We value fair pricing because we are mindful of the monetary cost of celebration.
-    We value our planet. We keep it happy & healthy by using recyclable paper. We encourage our clients to recycle our products where possible.
-    </p>
+        <h1>ABOUT</h1>
+
+        <h2>MEET JO</h2>
+        <p class="aboutwords">I’m Jenna & I am so glad you are here! Being from the golden coast, I am a lover of all
+            things beautiful & bright. I am a lover of life and believe it deserves to be celebrated. I am crazy about
+            amazing fonts, gorgeous paper & meaningful wording. I cannot wait to work with you & design the invitation
+            of your dreams!</p>
+
+        <h2>OUR STORY</h2>
+        <p class="aboutwords">The idea for JO was born in the summer of 2021 when I decided to marry the love of my
+            life! After scouring the internet, discovering the vast industry of online invitation boutiques, & failing
+            to find the wedding invitation of my dreams, I designed & printed my perfect wedding suite. I started JO
+            because everyone deserves a gorgeous invitation that matches their style & needs. The rest is history!</p>
+
+        <h2>OUR MISSION</h2>
+        <p class="aboutwords">JO’s mission is to elevate life’s most important moments through intentional
+            communication.</p>
+
+        <h2>OUR VALUES</h2>
+        <p class="aboutwords2">
+            We value print. (PRINT IS NOT DEAD!)
+            We value intentional design & gracious language.
+            We value the expansion of an individual’s core relationships.
+            We value refinement, class, politeness, love, & kindness.
+            We value fair pricing because we are mindful of the monetary cost of celebration.
+            We value our planet. We keep it happy & healthy by using recyclable paper. We encourage our clients to
+            recycle our products where possible.
+        </p>
 
     </main>
 
 
 
     <footer id="footlinksgrid">
-    <ul>
-        <li><a class="active" href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-    </ul>
-</footer>
-    
+        <ul>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+
 
     <div id="copyrightgrid">
         &copy; JO 2022
@@ -86,7 +116,7 @@ We value fair pricing because we are mindful of the monetary cost of celebration
     <div id="socialsgrid">
         <a href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok" ></i></a>
+        <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
     </div>
 
 
