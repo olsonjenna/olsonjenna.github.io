@@ -33,12 +33,12 @@
 
 <body>
   <header id="logogrid">
-      <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo" /></a>
+      <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo"></a>
       <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
   </header>
 
   <nav id="navbargrid">
-          <a href="index.html"><img id="PhonemainLogo"src="images/logo.png" alt="JO logo" /></a>
+          <a href="index.html"><img id="PhonemainLogo" src="images/logo.png" alt="JO logo"></a>
           <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="shop.html">SHOP</a></li>
@@ -76,41 +76,30 @@
   <main id="maingrid">
     <h1>GALLERY</h1>
     <div id="maingallery">
+      <script src="js/gallery.js"></script>
       <article class="card">
         <img src="images/wedding.jpg" alt="Wedding bouquet with orange, pink, & green plants">
-        <a href="weddinggallery.html">
-          <button class="gallerybutton">WEDDING</button>
-        </a>
+          <button class="gallerybutton" onclick="weddingFunction()">WEDDING</button>
       </article>
       <article class="card">
-        <a href="bridalgallery.html">
           <img src="images/bridalshowergallery.jpg" alt="White paper flower wall">
-          <button class="gallerybutton">BRIDAL SHOWER</button>
-        </a>
+          <button class="gallerybutton" onclick="bridalFunction()">BRIDAL SHOWER</button>
       </article>
       <article class="card">
-        <a href="babygallery.html">
           <img src="images/babygallery.jpg" alt="Baby shoes">
-          <button class="gallerybutton">BABY SHOWER</button>
-        </a>
+          <button class="gallerybutton" onclick="babyFunction()">BABY SHOWER</button>
       </article>
-      <article class="card large">
-        <a href="birthdaygallery.html">
+      <article class="card">
           <img src="images/birthdaygallery.jpg" alt="Pink balloons">
-          <button class="gallerybutton">BIRTHDAY</button>
-        </a>
+          <button class="gallerybutton" onclick="birthdayFunction()">BIRTHDAY</button>
       </article>
-      <article class="card medium">
-        <a href="holidaygallery.html">
+      <article class="card">
           <img src="images/holidaygallery.jpg" alt="Christmas tree">
-          <button class="gallerybutton">HOLIDAY</button>
-        </a>
+          <button class="gallerybutton" onclick="holidayFunction()">HOLIDAY</button>
       </article>
-      <article class="card small">
-        <a href="partygallery.html">
+      <article class="card">
           <img src="images/partygallery.jpg" alt="Drinking glasses">
-          <button class="gallerybutton">PARTY</button>
-        </a>
+          <button class="gallerybutton" onclick="partyFunction()">PARTY</button>
       </article>
     </div>
   </main>
