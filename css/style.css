@@ -554,9 +554,9 @@ image-grid-row-1 {
 
 @media screen and (max-width: 876px) {
 
-    #navbargrid a:hover,
-    #navbargrid a.active {
-        display: none;}
+    .navbargrid a {
+	    width: 100% !important; 
+}
 
 
     body {
@@ -661,25 +661,12 @@ image-grid-row-1 {
         display:inline;
         width: 12%;
     }
-    #logogrid a:hover{
-        display:none;
-
-
-    }
-
-    #PhonemainLogo a:hover, #PhonemainLogo a:active {
-        display:none;}
 
     #navbargrid {
         grid-area: nav;
         background-color: #B6BCA3;
         padding-top: 2%;
         padding-bottom: 0;
-    }
-
-    #navbargrid a:hover,
-    #navbargrid a.active {
-        display: none;
     }
 
     .navbar {
@@ -837,10 +824,10 @@ image-grid-row-1 {
 
 
 @media screen and (max-width: 600px) {
-    #navbargrid a:hover,
-#navbargrid a.active {
-    display: none;
+    .navbargrid a {
+	    width: 100% !important; 
 }
+
     body {
         display: grid;
         grid-template-areas:
@@ -957,11 +944,6 @@ image-grid-row-1 {
         background-color: #B6BCA3;
         padding-top: 2%;
         padding-bottom: 0;
-    }
-
-    #navbargrid a:hover,
-    #navbargrid a.active {
-        display: none;
     }
 
     .navbar {
