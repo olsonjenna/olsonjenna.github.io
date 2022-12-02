@@ -34,21 +34,27 @@
 <body>
     <header id="logogrid">
         <a href="index.html"><img id="mainLogo" src="images/logo.png" alt="JO logo" /></a>
+        <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </header>
 
-    <nav id="navbargrid" class="navbar">
-        <ul>
+    <nav id="navbargrid">
+            <a href="index.html"><img id="PhonemainLogo"src="images/logo.png" alt="JO logo" /></a>
+            <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a class="active" href="shop.html">SHOP</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="inquire.html">INQUIRE</a></li>
         </ul>
-        <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </nav>
 
-    <!-- Full Screen Overlay Navigation for Small Screens -->
+    <div id="checkoutgrid">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+
+
+    <!-- Full Screen Overlay Navigation for Small Screens-->
     <div id="myNav" class="overlay">
-        <!-- Button to close the overlay navigation -->
+        <!-- Button to close the overlay navigation-->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <!-- Overlay content -->
         <div class="overlay-content">
@@ -56,14 +62,21 @@
             <a href="shop.html">SHOP</a>
             <a href="gallery.html">GALLERY</a>
             <a href="inquire.html">INQUIRE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="faq.html">FAQ</a>
+            <a href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
         </div>
     </div>
 
     <script src="js/overlaynavigation.js"></script>
 
-    <div id="checkoutgrid">
-        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-    </div>
+
+
+
+
     <main id="maingrid">
     <h1>SHOP</h1>
     <p class="inprogress">creativity flowing... check back soon!
@@ -79,15 +92,14 @@
         </ul>
     </footer>
 
-
     <div id="copyrightgrid">
         &copy; JO 2022
     </div>
 
     <div id="socialsgrid">
-        <a href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a class="social" href="https://www.instagram.com/creating.jo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="social" href="https://www.pinterest.com/creatingjo/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        <a class="social" href="https://www.tiktok.com/@creating.jo/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
     </div>
 
 
