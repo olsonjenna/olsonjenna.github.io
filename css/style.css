@@ -533,6 +533,9 @@ image-grid-row-1 {
         }
 
 
+#mobilep{
+    display:none;
+        }
 /* Anything udner 1024px */
 @media screen and (max-width: 1024px) {
     .image-grid {
@@ -800,6 +803,10 @@ image-grid-row-1 {
 display:none;
     }
 
+    #mobilep{
+        display:none;
+            }
+
 
 }
 
@@ -915,7 +922,13 @@ display:none;
     }
     
     #homepage{
-        font-size: 68%;
+        font-size: 140%;
+        text-align: center;
+        font-weight: 350;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 0;
+
     }
 
 
@@ -1137,6 +1150,7 @@ display:none;
     #galleryheading{
         font-size: 155%;
     }
+
 }
 
 
